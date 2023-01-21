@@ -44,18 +44,11 @@ body {
   height: 600px;
   top: 500px;
   background-color: #000000;
+  background-image: url(../images/Logo\ sem\ fundo\ 600x600.png);
+  background-repeat: no-repeat;
+  background-size: cover;
    }
-  .card img{
-    position: absolute;
-    padding: 100px;
-    margin: 100px;
-    border-radius: 3px;
-    width: 700px;
-    height: 700px;
-    top: 50px;
-    opacity: 0.5;
-}
-.card-header {
+ .card-header {
   margin-bottom: 0px;
   margin-top: 0px;
   font-family: 'Abel';
