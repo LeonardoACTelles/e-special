@@ -1,0 +1,164 @@
+header{
+  background-color: #000000;
+  color: white;
+  font-size: 28px;
+  padding: 50px;
+  margin-bottom: 15px;
+  border: solid 1px white;
+  box-sizing: border-box;
+}
+.imag img{
+  height: 150px;
+  position:absolute;
+  left: 10px;
+	top: 1060px;
+ }
+.topo{
+  position: absolute;
+  left: 1.65%;
+  right: 84.05%;
+  top: 1px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 36px;
+  color: #FFFFFF;
+ }
+body {
+  padding: 0;
+  margin: 0;
+  background-image: url(../images/image3.jpg);
+}
+#login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  }
+.card {
+  padding: 100px;
+  margin: 100px;
+  border-radius: 3px;
+  width:600px;
+  height: 600px;
+  top: 500px;
+  background-color: #000000;
+   }
+  .card img{
+    position: absolute;
+    padding: 100px;
+    margin: 100px;
+    border-radius: 3px;
+    width: 700px;
+    height: 700px;
+    top: 50px;
+    opacity: 0.5;
+}
+.card-header {
+  margin-bottom: 0px;
+  margin-top: 0px;
+  font-family: 'Abel';
+  font-style: normal;
+  font-size: 50px;
+  text-align:center;
+  color: #FFF8F8;
+}
+h3{
+  font-family: 'Abel';
+  font-style: normal;
+  font-size: 30px;
+  text-align:center;
+  color: #FFF8F8;
+}
+.card-content label {
+  color: #fff;
+  font-size: 12px;
+  font-family: 'Abel';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 51px;
+}
+.card-content-usuario {
+  display: flex;
+  flex-direction: column;
+  bottom: 5px;
+}
+.card-content-senha {
+  display: flex;
+  flex-direction: column;
+  bottom: 5px;
+}
+.card-content-usuario input {
+  text-align:center;
+  border-radius: 20px;
+  padding:10px;
+  background-color: yellow;
+  border:none;
+  outline: none;
+  color: black;
+  }
+.card-content-senha input {
+  text-align:center;
+  padding:10px;
+  background-color: yellow;
+  border:none;
+  outline: none;
+  color: black;
+  border-radius: 20px;
+}
+.card-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card-footer .submit{
+width: 487px;
+height: 51px;
+left: 476px;
+top: 632px;
+border-radius: 9px;
+background-color:#1D1C1C;
+border:none;
+color:#FFFFFF;
+margin: 10px 0;
+font-family: 'Abel';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 45px;
+align-items: center;
+}
+.card-footer a {
+  text-align: center;
+  font-size: 12px;
+  opacity: 0.8;
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Abel';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 64px;
+}
+footer{
+background-color: black;
+height: 200px;
+color: white;
+padding: 12px;
+text-align:center;
+border: solid 1px white;
+box-sizing: border-box ;
+}
+#img{
+  text-align:left;
+  background-position: left;
+}
+#imagem{
+  height: 150px;
+  position:absolute;
+  left: 10px;
+	top: 1060px;
+ }
+
