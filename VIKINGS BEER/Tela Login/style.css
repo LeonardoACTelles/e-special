@@ -107,9 +107,10 @@ body {
   height: 600px;
   top: 500px;
   background-color: #000000;
-  background-image: url(../images/Logo\ sem\ fundo\ 600x600.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-image: url(../images/Logo\ sem\ fundo\ 600x600.png);
+
    }
  .card-header {
   margin-bottom: 0px;
@@ -216,5 +217,16 @@ footer{
   position:absolute;
   left: 10px;
 	top: 1080px;
+ }
+ .rodape{
+  height: 150px;
+  position:absolute;
+  left: 10px;
+	top: 1080px;
+  display: contents;
+  flex-direction: row;
+  padding: 0px 20px 0px 0px;
+  gap: 32px;
+  isolation: isolate;
  }
 
