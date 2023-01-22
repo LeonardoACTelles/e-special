@@ -114,43 +114,40 @@ a:hover{
 }
 #login-container{
   background-color: black;
+  background-image: url(../images/Logo\ sem\ fundo\ 600x600.png);
+  background-repeat: no-repeat;
+  background-position: 50%;
   width: 600px;
   margin-left: auto;
   margin-right: auto;
-  padding: 25px 30px;
+  padding: 25px 50px;
   margin-top: 10vh;
   border-radius: 5px;
   text-align: center;
+  position: relative;
 }
-/* .logotipo{
-  opacity: 0.5;
-  background-size: 50%;
-} */
 h1{
   color: #FFFFFF;
   font-family: 'Abel';
   font-style: normal;
   font-weight: 400;
   font-size: 50px;
+  opacity: 5;
 }
 form{
   margin-top: 30px;
   margin-bottom: 50px;
   text-align: center;
 }
-/* label, */ input{
+input{
   background-color: #F9E000;;
   display:block;
   padding: 10px;
   margin-bottom: 25px;
   border-radius: 25px;
-  text-align: center;
-  font-family: 'Abel';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 40px;
   color: #000000;
   font-weight: bold;
+
 }
 
 #forgot-pass{
@@ -185,12 +182,12 @@ input[type="submit"]{
   font-size: 25px;
   color: #FFFDFD;
 }
-/*   footer{
+/* footer{
     background-color: black;
     height: 200px;
+    margin: 310px 0px 0px;
     color: white;
     padding: 12px;
-    text-align:center;
     border: solid 1px white;
     box-sizing: border-box ;
   }
@@ -202,17 +199,17 @@ input[type="submit"]{
     height: 150px;
     position:absolute;
     left: 10px;
-      top: 1080px;
+    top: 1050px;
    }
    .rodape{
     height: 150px;
     position:absolute;
     left: 10px;
-      top: 1080px;
+    top: 1250px;
     display: contents;
     flex-direction: row;
     padding: 0px 20px 0px 0px;
     gap: 32px;
     isolation: isolate;
-   } */
-  
+   }
+   */
