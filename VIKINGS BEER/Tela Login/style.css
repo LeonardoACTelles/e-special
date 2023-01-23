@@ -126,9 +126,10 @@ a:hover{
   margin-right: auto;
   padding: 25px 50px;
   margin-top: 10vh;
-  border-radius: 5px;
+  border-radius: 10px;
   text-align: center;
   position: relative;
+
 }
 h1{
   color: #FFFFFF;
