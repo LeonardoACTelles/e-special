@@ -105,8 +105,8 @@ a {
   font-family: 'Abel';
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 64px;
+  font-size: 25px;
+  line-height: 50px;
   color: #FFFFFF;
 }
 a:hover{
@@ -140,6 +140,9 @@ form{
   text-align: center;
 }
 input{
+  width: 487px;
+  height: 20x;
+  left: 20px;
   background-color: #F9E000;;
   display:block;
   padding: 10px;
@@ -147,7 +150,11 @@ input{
   border-radius: 25px;
   color: #000000;
   font-weight: bold;
-
+  line-height: 35px;
+  font-family: 'Abel';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
 }
 
 #forgot-pass{
@@ -156,8 +163,8 @@ input{
 }
 input[type="submit"]{
   width: 487px;
-  height: 80px;
-  left: 80px;
+  height: 20x;
+  left: 20px;
   margin-bottom: 25px;
   text-align: center;
   text-transform: uppercase;
@@ -172,8 +179,13 @@ input[type="submit"]{
   font-style: normal;
   font-weight: 400;
   font-size: 25px;
-  line-height: 64px;
+  line-height: 25px;
 }
+input[type="submit"]:hover{
+  background-color: white;
+  color: black;
+}
+
 #register-container p{
   margin-bottom: 10px;
   font-family: 'Abel';
