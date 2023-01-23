@@ -112,12 +112,16 @@ a {
 a:hover{
   color: yellow
 }
+.showcase {
+  position: relative;
+}
+.bg-image {
+  opacity: 0.5;
+}
 #login-container{
   background-color: black;
-  background-image: url(../images/Logo\ sem\ fundo\ 600x600.png);
-  background-repeat: no-repeat;
-  background-position: 50%;
-  width: 600px;
+  height: 600px;
+  width: 800px;
   margin-left: auto;
   margin-right: auto;
   padding: 25px 50px;
@@ -132,12 +136,17 @@ h1{
   font-style: normal;
   font-weight: 400;
   font-size: 50px;
-  opacity: 5;
+  position: absolute;
+  top: 30px;
+  left: 325px;
 }
 form{
   margin-top: 30px;
   margin-bottom: 50px;
   text-align: center;
+  position: absolute;
+  top: 100px;
+  left: 150px;
 }
 input{
   width: 487px;
@@ -193,6 +202,19 @@ input[type="submit"]:hover{
   font-weight: 400;
   font-size: 25px;
   color: #FFFDFD;
+  position: absolute;
+  top: 450px;
+  left: 290px;
+}
+#register-container a{
+  font-family: 'Abel';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 64px;
+  position: absolute;
+  top: 500px;
+  left: 340px;
 }
 /* footer{
     background-color: black;
