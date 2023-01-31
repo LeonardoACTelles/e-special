@@ -50,8 +50,8 @@ header {
     margin-left: 50px;
 }
 
-.minha-conta p{
-    margin-top: 10px; /* adiciona espaçamento entre a imagem e o texto */  
+.minha-conta p1{
+    margin-top: 10px;/* adiciona espaçamento entre a imagem e o texto */  
 }
  
 .meus-pedidos {
@@ -63,7 +63,7 @@ header {
    
 }
 
-.meus-pedidos p{
+.meus-pedidos p1{
     margin-top: 10px; /* adiciona espaçamento entre a imagem e o texto */  
 }
 
@@ -83,60 +83,137 @@ body {
     background-image: url(../images/image2.jpg);
 }
 .card {
-    padding: 50px;
-    margin: 100px 300px;
+    padding: 40px;
+    margin: 100px 100px;
     border-radius: 3px;
-    width:800px;
     height: 900px;
-    top: 300px;
     background-color: #000000;
-    align-items: center;
-}
-.card-header {
-    padding: 0px;
-    margin: 1px 20px;
-    width: 100px;
-    height: 100px;
-    left: 10px;
-    top: 200px;
-}
-h3{
-    font-family: 'Abel';
-    font-style: normal;
-    font-size: 30px;
-    text-align:center;
-    color: #FFF8F8;
-}
-.card-content-usuario {
+    min-height: 300px;
     display: flex;
-    flex-direction: column;
-    bottom: 5px;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 90%;
+    flex-grow: 1;
 }
-.card-parte {
-  position: absolute;
-  left: 8.5%;
-  right: 50.82%;
-  top: 42.14%;
-  bottom: 45.5%;
+.image{
+  height: 380px;
+  width: 480px;
 }
-.card-parte label {
+main > aside {
+  font-size: 0.9rem;
+  text-align: center;
+  padding: 4rem;
+  max-width: 35rem;
+  max-height: 43rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  position: relative;
+  right: 0rem;
+  left: 0rem;
+  bottom: 0rem;
+  top: 0rem;
+}
+h1{
+font-family: 'Abel';
+font-style: normal;
+font-weight: 400;
+font-size: 40px;
+line-height: 60px;
+text-align: center;
+letter-spacing: -0.55px;
+color: #F9E000;
+}
+p{
+font-family: 'Public Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+color: #FEFBFB;
+justify-content: center;
+}
+main > section {
+  padding: 4rem;
+}
+
+main > section h1 {
+  letter-spacing: 0.05rem;
+  font-size: 1.8rem;
+}
+
+main > section form {
+  gap: .3rem;
+  color: #9B9B9B;
+  font-size: .9rem;
+}
+.column {
+  display: flex;
+  flex-flow: column;
+}
+
+.column.disclaimer {
+  max-width: 10rem !important;
+}
+
+.column.disclaimer span {
+  margin-top: -1rem;
+}
+.column.sm {
+  width: 100%;
+  align-self: auto;
+  max-width: 80%;
+  justify-content: start;
+  width: auto;
+  min-width: 15%;
+}
+h2{
+font-family: 'Abel';
+font-style: normal;
+font-weight: 400;
+font-size: 60px;
+line-height: 30px;
+letter-spacing: -0.55px;
+color: #F9E000;
+border: none;
+}
+input{
+  width: 487px;
+  height: 20x;
+  left: 20px;
+  background-color: #fff;;
+  display:block;
+  padding: 10px;
+  margin-bottom: 25px;
+  border-radius: 25px;
+  color: #000000;
+  font-weight: bold;
+  line-height: 35px;
   font-family: 'Abel';
   font-style: normal;
   font-weight: 400;
-  font-size: 60px;
-  line-height: 60px;
+  font-size: 30px;
+}
+input[type="submit"]{
+  width: 487px;
+  height: 20x;
+  left: 20px;
+  margin-bottom: 25px;
   text-align: center;
-  letter-spacing: -0.55px;
-  color: #F9E000;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: none;
+  border-radius: 25px;
+  margin-top: 30px;
+  color: white;
+  cursor: pointer;
+  background-color: #424242;
+  font-family: 'Abel';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 25px;
 }
-.card-content-senha input {
-    text-align:center;
-    padding:10px;
-    background-color: yellow;
-    border:none;
-    outline: none;
-    color: white;
-    border-radius: 20px;
+input[type="submit"]:hover{
+  background-color: white;
+  color: black;
 }
-  
   

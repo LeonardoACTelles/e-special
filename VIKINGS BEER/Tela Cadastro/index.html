@@ -15,31 +15,39 @@
             <li><a href="#"><img src="../Tela Home/imagens/t.png" alt="VIKINGS BEERHOUSE" width="150px" ></a></li>
             <li><a href="#"><form><input type="search" placeholder="Pesquisar"></form></a></li>
           <div class="barra-vertical"></div>
-          <li><a href="#"><div class="minha-conta"><img src="../images/Logo do Login.png" alt="Minha Conta"  width="30" height="30"><p>Minha <br> Conta</p></div></a>
+          <li><a href="#"><div class="minha-conta"><img src="../images/Logo do Login.png" alt="Minha Conta"  width="30" height="30"><p1>Minha <br> Conta</p1></div></a>
           </li>
-          <li><a href="#"><div class="meus-pedidos"><img src="../images/Shopping Cart.png" alt="Meus Pedidos"  width="30" height="30"><p>Meus <br> Pedidos</p></div></a>
+          <li><a href="#"><div class="meus-pedidos"><img src="../images/Shopping Cart.png" alt="Meus Pedidos"  width="30" height="30"><p1>Meus <br> Pedidos</p1></div></a>
           </li>
           </ul>
         </nav>
       </header>
-    <body class="tela-cadastro">
-        <div id="cadastro">
-            <div class="card">
-                    <div class="card-header">
-                    <img src="../images/Logo sem fundo 600x600.png">
-                </div>
-                <div class="card-content">
-                    <div class="card-parte">
-                    <label for="usuario">Faça parte da nossa Beerhouse</label>
-                    </div>
-                    <div class="card-content-senha">
-                        <label for="password">Receba uma  newsletter com dicas de fabricação e receitas para harmonização em diversas ocasiões. 
-                            Surpreenda o paladar de seus amigos e família.
-                            Todo mês um catálogo exclusivo de cervejas dos maiores fabricantes artesanais do Brasil.</label>
-                    </div>
-                </div>
-            </div>
-            
-            </div>
-        </body>
+      <body>
+        <div class="card">
+        <aside class="column">
+            <img  class="image"src="../images/Logo sem fundo 600x600 sem opacidade.png" alt="logotipo">
+            <h1>Faça parte da nossa <br> BEERHOUSE</h1>
+            <p>Receba uma  newsletter com dicas de <br> fabricação e receitas para harmonização em diversas ocasiões. <br>
+            Surpreenda o paladar de seus amigos <br> e família. <br>
+            Todo mês um catálogo exclusivo de <br> cervejas dos maiores fabricantes <br> artesanais do Brasil.</p>
+          </aside>
+        <main>
+          <section>
+            <h2>Seja um Viking</h2>
+              <form class="column" action="" method="get">
+              <div class="column">
+               <input type="text" name="nome" class="form_input" id="nome" placeholder="Nome Completo" required>
+               <input type="date" name="datanascimento" class="form_input" id="datanascimento" placeholder="Data de Nascimento" required>
+                <input type="text" name="endereco" class="form_input" id="endereco" placeholder="Endereço Completo" required>                   
+                <input type="email" name="email" class="form_input" id="email" placeholder="E-mail" required>
+                <input type="email" name="email" class="form_input" id="email" placeholder="Confirme seu e-mail" required>
+                <input type="password" name="password" class="form_input" id="password" placeholder="Senha" required>
+                <input type="password" name="password" class="form_input" id="password" placeholder="Confirme sua senha" required>
+                <h3>Cadastre-se com:</h3>
+
+                <input type="submit" value="Cadastrar">
+            </form>
+          </section>       
+        </main>
+    </div>
 </html>
