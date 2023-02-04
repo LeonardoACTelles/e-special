@@ -1,3 +1,9 @@
+* {
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  border:none
+}
 header {
     background-color: rgb(0, 0, 0);
     color: #fff;
@@ -67,27 +73,29 @@ header {
     margin-top: 10px; /* adiciona espaçamento entre a imagem e o texto */  
 }
 
-input[type="search"]{
-    background-color: #000000;
-    border-color: rgb(255, 255, 255);
-    border-radius: 6px;
-    text-align: center;
-    width: 300px;
-    font-size:medium;
-    height: 30px;
-    color:#fff;
+header input[type="search"]{
+  background-color: white;
+  border-color: white;
+  border: 6px;
+  border-radius: 6px;
+  text-align: center;
+  width: 300px;
+  font-size:medium;
+  height: 30px;
+  color: black;
 }
+
 body {
     padding: 0;
     margin: 0;
-    background-image: url(../images/image2.jpg);
+    background-color: #000000;
+    box-sizing: border-box;
 }
 .card {
     padding: 40px;
     margin: 100px 100px;
     border-radius: 3px;
     height: 900px;
-    background-color: #000000;
     min-height: 300px;
     display: flex;
     flex-flow: row wrap;
@@ -116,23 +124,30 @@ main > aside {
 h1{
 font-family: 'Abel';
 font-style: normal;
-font-weight: 400;
+font-weight: 200;
 font-size: 40px;
-line-height: 60px;
+line-height: 70px;
 text-align: center;
-letter-spacing: -0.55px;
+letter-spacing: 8px;
 color: #F9E000;
+height: 150px;
 }
+
 p{
+display: flex;
+flex-flow: wrap;
 font-family: 'Public Sans';
 font-style: normal;
 font-weight: 500;
 font-size: 20px;
 color: #FEFBFB;
-justify-content: center;
+justify-content:space-around;
+letter-spacing: 1px;
+padding: 10px;
+margin: 10px;
 }
 main > section {
-  padding: 4rem;
+  padding: 2rem 0rem 6rem 6rem;
 }
 
 main > section h1 {
@@ -149,22 +164,6 @@ main > section form {
   display: flex;
   flex-flow: column;
 }
-
-.column.disclaimer {
-  max-width: 10rem !important;
-}
-
-.column.disclaimer span {
-  margin-top: -1rem;
-}
-.column.sm {
-  width: 100%;
-  align-self: auto;
-  max-width: 80%;
-  justify-content: start;
-  width: auto;
-  min-width: 15%;
-}
 h2{
 font-family: 'Abel';
 font-style: normal;
@@ -174,23 +173,36 @@ line-height: 30px;
 letter-spacing: -0.55px;
 color: #F9E000;
 border: none;
+position: absolute;
+top: 250px;
+right: 455px; 
 }
 input{
   width: 487px;
   height: 20x;
   left: 20px;
   background-color: #fff;;
-  display:block;
   padding: 10px;
-  margin-bottom: 25px;
-  border-radius: 25px;
+  margin-bottom: 15px;
+  border-radius: 15px;
   color: #000000;
   font-weight: bold;
-  line-height: 35px;
+  line-height: 25px;
   font-family: 'Abel';
   font-style: normal;
   font-weight: 400;
-  font-size: 30px;
+  font-size: 25px;
+}
+h3{
+font-family: 'Public Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 25px;
+line-height: 29px;
+display: flex;
+align-items: center;
+letter-spacing: -0.3px;
+color: #FFFFFF;
 }
 input[type="submit"]{
   width: 487px;
@@ -201,7 +213,7 @@ input[type="submit"]{
   text-transform: uppercase;
   font-weight: bold;
   border: none;
-  border-radius: 25px;
+  border-radius: 15px;
   margin-top: 30px;
   color: white;
   cursor: pointer;
@@ -216,4 +228,20 @@ input[type="submit"]:hover{
   background-color: white;
   color: black;
 }
-  
+
+#social-container{
+  margin-bottom: 20px;
+}
+
+#social-container i{
+  height: 40px;
+  width: 40px;
+  color: #FFFFFF;
+  border-radius: 50%;
+  line-height: 40px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+.fa-facebook-f{
+  background-color: #385998;
+}
