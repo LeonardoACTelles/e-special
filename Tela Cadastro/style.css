@@ -1,0 +1,63 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-image: url(../images/image2.jpg);
+}
+.card {
+    padding: 100px;
+    margin: 100px 300px;
+    border-radius: 3px;
+    width:1000px;
+    height: 900px;
+    top: 500px;
+    background-color: #000000;
+    align-items: center;
+}
+.card-header {
+    padding: 0px;
+    margin: 1px 20px;
+    width: 100px;
+    height: 100px;
+    left: 10px;
+    top: 200px;
+}
+h3{
+    font-family: 'Abel';
+    font-style: normal;
+    font-size: 30px;
+    text-align:center;
+    color: #FFF8F8;
+}
+.card-content-usuario {
+    display: flex;
+    flex-direction: column;
+    bottom: 5px;
+}
+.card-parte {
+  position: absolute;
+  left: 8.5%;
+  right: 50.82%;
+  top: 42.14%;
+  bottom: 45.5%;
+}
+.card-parte label {
+  font-family: 'Abel';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 60px;
+  text-align: center;
+  letter-spacing: -0.55px;
+  color: #F9E000;
+}
+.card-content-senha input {
+    text-align:center;
+    padding:10px;
+    background-color: yellow;
+    border:none;
+    outline: none;
+    color: white;
+    border-radius: 20px;
+}
+  
+  
