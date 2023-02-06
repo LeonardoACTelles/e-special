@@ -70,15 +70,14 @@ header nav ul li a {
 }
 
 header input[type="search"]{
-  background-color: white;
-  border-color: white;
-  border: 6px;
+  background-color: black;
+  border: 1px solid white;
   border-radius: 6px;
   text-align: center;
   width: 300px;
   font-size:medium;
   height: 30px;
-  color: black;
+  color: white;
 }
 
 * {

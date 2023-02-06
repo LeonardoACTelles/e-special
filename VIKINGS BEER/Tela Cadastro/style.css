@@ -4,6 +4,9 @@
   box-sizing: border-box;
   border:none
 }
+:root{
+  font-size: 62.5%;
+}
 header {
     background-color: rgb(0, 0, 0);
     color: #fff;
@@ -74,15 +77,14 @@ header {
 }
 
 header input[type="search"]{
-  background-color: white;
-  border-color: white;
-  border: 6px;
+  background-color: black;
+  border: 1px solid white;
   border-radius: 6px;
   text-align: center;
   width: 300px;
   font-size:medium;
   height: 30px;
-  color: black;
+  Color: white;
 }
 
 body {
