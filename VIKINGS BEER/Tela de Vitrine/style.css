@@ -94,28 +94,48 @@ body {
     background-color: #000000;
     box-sizing: border-box;
 }
-.pesquisa li {
-  background-color: rgb(0, 0, 0);
-  color: #fff;
+section{
+  display: flex;
+  margin: 0px 0px 0px 15px;
+  padding: 0px 0px 0px 15px;
+}
+.pesquisa{
   display: flex;
   margin: 30px;
-  padding: 60px;
-  gap: 5rem;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 1em;
-  border: 1px solid rgb(255, 255, 255);
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 10px;
-  background-color: black;
-  color: rgb(255, 255, 255);
-  text-decoration: none;
-  text-align: center;
-  height: 100px;
+  padding: 30px;
+  gap: 1rem;
+  list-style: none;
+
+}
+.pesquisa li{
+  border: 2px solid white;
+  height: 25px;
+  width: 100px;
+  display: flex;
+  align-items: center;
   box-sizing: border-box;
   font-size: large;
+  list-style: none;
 }
+.pesquisa li a{
+  font-family: 'Public Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 28px;
+  letter-spacing: -0.4px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  list-style: none;
+  text-align: center;
+  margin: 25px;
+
+}
+
+.pesquisa li a:hover{
+ color: yellow;
+}
+
 li a{
   font-family: Arial, sans-serif;
 }
@@ -124,11 +144,35 @@ li {
   margin-right: 7.2em;
   box-sizing: border-box;
 }
+.ordenacao{
+  border: 2px solid white;
+  margin: 30px;
+  padding: 30px;
+  gap: 1rem;
+  list-style: none;
+  align-items: center;
+  box-sizing: border-box;
+  font-size: large;
+  list-style: none;
+}
+label{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 26px;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.3px;
+  color: #FFFFFF;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
 
 main{
   display: flex;
-  margin: 30px;
-  padding: 60px;
+  margin: 0px 0px 15px 15px;
+  padding: 0px 0px 15px 15px;
   gap: 5rem;
   flex-wrap: wrap;
   font-family: 'Public Sans';
@@ -138,11 +182,30 @@ main{
   line-height: 28px;
   letter-spacing: -0.4px;
   color: #FFFFFF;
+  text-decoration: none;
 }
-.beer{
+
+.BEER{
   padding: 20px;
   margin: 20px;
  }
+
+ .BEER p{
+  font-family: 'Public Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 28px;
+  letter-spacing: -0.4px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  list-style: none;
+}
+
+.BEER p:hover{
+  color: yellow;
+}
+
 input[type="submit"]{
   border: 2px solid #FFFFFF;
   border-radius: 10px;
@@ -152,7 +215,6 @@ input[type="submit"]{
   width: 487px;
   height: 900x;
   left: 650px; 
-  top: 50px;
   background-color: black;
   width: 300px;
   height: 30px;

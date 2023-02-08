@@ -133,8 +133,19 @@ h1{
   top: 30px;
   left: 325px;
 }
+
+h2{
+  color: yellow;
+  font-family: 'Abel';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  position: absolute;
+  top: 30px;
+  left: 325px;
+}
 form{
-  margin-top: 30px;
+  margin-top: 50px;
   margin-bottom: 50px;
   text-align: center;
   position: absolute;

@@ -69,7 +69,6 @@ header {
     align-items: center;
     margin-top: 15px;
     margin-left: 0px;
-   
 }
 
 .meus-pedidos p1{
@@ -109,6 +108,7 @@ body {
   height: 380px;
   width: 480px;
 }
+
 main > aside {
   font-size: 0.9rem;
   text-align: center;
@@ -166,19 +166,21 @@ main > section form {
   display: flex;
   flex-flow: column;
 }
+
 h2{
-font-family: 'Abel';
-font-style: normal;
-font-weight: 400;
-font-size: 60px;
-line-height: 30px;
-letter-spacing: -0.55px;
-color: #F9E000;
-border: none;
-position: absolute;
-top: 250px;
-right: 455px; 
+  font-family: 'Abel';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 30px;
+  letter-spacing: -0.55px;
+  color: #F9E000;
+  border: none;
+  position: absolute;
+  top: 210px;
+  right: 485px; 
 }
+
 input{
   width: 487px;
   height: 20x;
@@ -195,6 +197,7 @@ input{
   font-weight: 400;
   font-size: 25px;
 }
+
 h3{
 font-family: 'Public Sans';
 font-style: normal;
@@ -206,6 +209,7 @@ align-items: center;
 letter-spacing: -0.3px;
 color: #FFFFFF;
 }
+
 input[type="submit"]{
   width: 487px;
   height: 20x;
