@@ -1,26 +1,24 @@
-:root{
-  font-size: 62.5%;
-}
 * {
   margin:0;
   padding: 0;
   box-sizing: border-box;
  }
+ body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+
 header {
   background-color: rgb(0, 0, 0);
   color: #fff;
   display: flex;
   justify-content: space-between;
-  padding: 1em;
+  padding: 0.5rem;
   border: 1px solid rgb(255, 255, 255);
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 10px;
-  background-color: black;
 }
-header a{
-  font-family: Arial, sans-serif;
-}
+
 header nav ul {
   list-style: none;
   margin: 0;
@@ -41,11 +39,77 @@ header nav ul li a {
   display: flex;
   align-items: center;
   box-sizing: border-box;
-  font-size: large;
+  font-size: 16px;
 }
+
+
+main {
+  padding: 1;
+  color: #fff;
+}
+
+h1{
+  margin-top: 0;
+}
+
+.destaque {
+  width: 15%; /* largura da div */
+  margin: auto;
+  display: flex;
+  justify-content: center; /* alinha os elementos filhos no centro horizontalmente */
+  align-items: center; /* alinha os elementos filhos no centro verticalmente */
+  border: 1px solid rgb(255, 255, 255);
+  font-size:larger;
+  border-radius: 5px;
+  height: 30px;
+}
+
+#banner{
+display: flex;
+align-items: center;
+justify-content: center;
+background: url("./imagens/h.png") no-repeat center;
+background-size: cover;
+width: 100vh;
+height: 100vh;
+}
+
+main nav ul{
+  color: rgb(255, 255, 255);
+  list-style: none;
+  margin: 2;
+  padding: 0;
+  text-align: center;
+  height: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5em;
+  box-sizing: border-box;  
+}
+
+main nav ul li a p {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size:x-large;
+  border-radius: 30px;
+  height: 50px;
+  background-color: rgb(238, 238, 45);
+  color:black;
+  width: 40%;
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+
+h2 {
+  text-align: center;
+}
+
 .barra-vertical {
   width: 5px;
-  height: 100px;
+  height: 90px;
   background-color: rgb(255, 255, 255);
 }
 
@@ -53,8 +117,8 @@ header nav ul li a {
   display: flex;
   flex-direction: column; /* torna o container um elemento flexível, com orientação de coluna */
   align-items: center;
-  margin-top: 10px;
-  margin-left: 30px;
+  margin-top: 15px;
+  margin-left: 50px;
 }
 
 .minha-conta p{
@@ -65,34 +129,25 @@ header nav ul li a {
   display: flex;
   flex-direction: column; /* torna o container um elemento flexível, com orientação de coluna */
   align-items: center;
-  margin-top: 9px;
+  margin-top: 15px;
   margin-left: 0px;
- 
 }
-
 .meus-pedidos p{
   margin-top: 10px; /* adiciona espaçamento entre a imagem e o texto */  
 }
 
-header input[type="search"]{
-  background-color: black;
-  border: 1px solid white;
+input[type="search"]{
+  background-color: #000000;
+  border-color: rgb(255, 255, 255);
   border-radius: 6px;
   text-align: center;
   width: 300px;
   font-size:medium;
   height: 30px;
-  color: white;
+  color:#fff;
 }
-
 a:hover{
   color: yellow
-}
-body {
-    padding: 0;
-    margin: 0;
-    background-color: #000000;
-    box-sizing: border-box;
 }
 section{
   display: flex;
@@ -105,7 +160,6 @@ section{
   padding: 30px;
   gap: 1rem;
   list-style: none;
-
 }
 .pesquisa li{
   border: 2px solid white;
@@ -117,6 +171,7 @@ section{
   font-size: large;
   list-style: none;
 }
+
 .pesquisa li a{
   font-family: 'Public Sans';
   font-style: normal;
@@ -129,7 +184,6 @@ section{
   list-style: none;
   text-align: center;
   margin: 25px;
-
 }
 
 .pesquisa li a:hover{
@@ -146,8 +200,14 @@ li {
 }
 .ordenacao{
   border: 2px solid white;
-  margin: 30px;
-  padding: 30px;
+  height: 35px;
+  width: 250px;
+  display: flex;
+  margin: 57px;
+  align-items: center;
+  box-sizing: border-box;
+  font-size: large;
+  list-style: none;
   gap: 1rem;
   list-style: none;
   align-items: center;
@@ -161,12 +221,20 @@ label{
   font-weight: 400;
   font-size: 13px;
   line-height: 26px;
-  display: flex;
   align-items: center;
   letter-spacing: -0.3px;
   color: #FFFFFF;
   mix-blend-mode: normal;
   opacity: 0.5;
+  margin: 8px;
+  
+}
+
+select{
+  color: white;
+  background-color: black;
+  border: none;
+  font-weight: 1000;
 }
 
 main{
@@ -188,6 +256,7 @@ main{
 .BEER{
   padding: 20px;
   margin: 20px;
+  text-decoration: none;
  }
 
  .BEER p{
@@ -231,4 +300,7 @@ input[type="submit"]{
 input[type="submit"]:hover{
   background-color: white;
   color: black;
+}
+a{
+  text-decoration: none;
 }
