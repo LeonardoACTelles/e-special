@@ -5,8 +5,6 @@
 }
    body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
     background-color: black;
 }
   header {
@@ -40,9 +38,7 @@
   main {
     padding: 1;
     color: #fff;
-}
-  h1{
-    margin-top: 0;
+    margin: 15px;
 }
   .destaque {
     width: 15%; /* largura da div */
@@ -64,7 +60,7 @@
   width: 100vh;
   height: 100vh;
 }
-  main nav ul{
+main nav ul{
     color: rgb(255, 255, 255);
     list-style: none;
     margin: 2;
@@ -129,33 +125,26 @@
   a:hover{
     color: yellow
 }
-  #grup{
+.grup{
     display: flex;
     align-items: center;
 }
-  #grup img{
+.grup img{
     margin: 0 45px;
 }
-  .barra-produto {
+.barra-produto {
     width: 8px;
     height: 577px;
     background-color: rgb(255, 255, 255);
+    margin: 50px;
 }
-  .favorites{
-    position: relative;
-    left: 625px;
-    bottom: 273px;
-}
-#txt-grup{
-   flex-direction: column; 
+.txt-grup{
+    flex-direction: column; 
     align-items: center;
     justify-content: center;
-    margin: 10px;
 }
-
- #txt-grup img{
-    position: relative;
-    top: 10px;
+.produto img{
+    margin: 50px;
 }
 h2{
     font-size: 50px;
@@ -166,10 +155,16 @@ h2{
     line-height: 44px;
     letter-spacing: 1.5px;
     color: #FFFFFF;
+    padding-bottom: 10px;
 }
-h1{
+.preco{
+    position: relative;
+    left: 350px;
+    bottom: 200px;
+}
+.preco h1{
     font-family: 'Public Sans';
-    font-style: normal;
+    font-style:normal;
     font-weight: 400;
     font-size: 40px;
     line-height: 26px;
@@ -178,91 +173,124 @@ h1{
     text-align: center;
     letter-spacing: -0.3px;
     color: #FFFFFF;
-    position: relative;
-    left: 300px;
-    bottom: 200px;
+
 }
 .bb{
     margin: 20px;
     padding: 10px;
+    position: relative;
+    left: 270px;
+    bottom: 180px;
+}
+button{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
 }
 .btn{
     color: white;
     background-color: black;
-    width: 30%;
+    width: 45%;
     border: 2px solid #FFFFFF;
     border-radius: 10px;
 }
+.btn p{
+    font-family: 'Inter';
+    font-style: normal;
+    /* font-weight: 400; */
+    font-size: 20px;
+    /* line-height: 18px; */
+    text-align: center;
+    mix-blend-mode: normal;
+}
 #descricao{
-    display: flex;
     width: 90%;
     padding: 15px;
     border-radius: 10px;
-    background-color:#884f0e79;
-}
-h5{
-     color:  #1c372c;
-} 
-#col-md-5{
-    display: flex;
+    background-color:black;
     position: relative;
-    margin-top: 20px;
-    left: 500px;
-}  
+    bottom: 120px;
+}
+.icon{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    margin-left: 50px;
+}
 #quantidade{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #1c372c;
-    border-radius:15px;
-    max-width: 75px;
-    height: 30px;
+    background-color: black;
+    border: 1px solid #FFFFFF;
+    max-width: 100px;
+    height: 50px;
     display: flex;
-    margin: 0px;
+    margin: 25px;
     left: 500px;
 }
 #minus{
     float:left;
-    background-color:transparent;
-    color: white;
+    background-color:#FFFFFF;
+    color: black;
     font-size:18px;
     font-weight: bold;
     border: none;
-    margin: 0px;
+    margin: 6px;
+    width: 20px;
+    height: 20px;
 }
       
 #plus{
-    float:right;
-    background-color:transparent;
-    color: white;
+    float:left;
+    background-color:#FFFFFF;
+    color: black;
     font-size:18px;
     font-weight: bold;
     border: none;
-    margin: 0px;
+    margin: 6px;
+    width: 20px;
+    height: 20px;
 }
       
 #quant{
-    background-color: white;
+    background-color: transparent;
+    color: white;
     border: none;
     height: 25px;
     width: 25px;
     text-align: center;
     margin: 0px;
 }
-      
-#tamanho{
-    height: 30px;
+           
+.btn:hover{
+    background-color: white;
+    color: black;
+}
+#quantrow {
+    position: relative;
+    left: 350px;
+    bottom: 175px;
+}
+
+.col-md-5 p{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 26px;
+    letter-spacing: -0.3px;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    position: relative;
+    left: 35px;
+}
+.icon img{
     margin-right: 10px;
-}
-      
-#button-addon2{
-    padding-right: 20px;
-}
-      
-.hover{
-    text-decoration: none;
-}
-.hover:hover{
-    background-color: #346350;
-    text-decoration: none;
 }

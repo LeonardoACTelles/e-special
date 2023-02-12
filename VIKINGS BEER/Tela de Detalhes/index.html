@@ -37,16 +37,17 @@
         <div class="container mt-3 mb-5">
         <div class="row d-flex justify-content-center">
         </div>
-        <div id="grup">
+        <div class="grup">
           <img src='../images/young stout (2).png'>
           <div class="barra-produto"></div>
-          <div class="favorites">
-          <a href="#"></a><img src="../images/Favorites Icon.png" alt="Favoritos"></a>
-        </div>
-          <div class="col-5" id="txt-grup">
-            <h2>Beer Double Chocolate</h2>
+          <div class="txt-grup">
+            <h2>Beer Double Chocolate
+            <a href="#"><img src="../images/Favorites Icon.png" alt="Favoritos"></a>
+            </h2>
             <img src="../images/young stout (1).png">
+            <div class="preco">
             <h1>R$69,99</h1>
+            </div>
             <div id="quantrow" class="row">
               <div class="col-md-5">
                 <p>Quantidade:</p>
@@ -61,15 +62,17 @@
                 <input type="button" id="plus" value="+" (click)="process(1)" (click)="parcial()">
               </div>
             </div>
-            <button type="button" class="btn bb" (click)="addCarrinho()">Adicionar ao carrinho</button>
+            <button type="button" class="btn bb" (click)="addCarrinho()"><p>Adicionar ao carrinho</p></button>
             <div id="descricao">
-            <p><strong>Informações sobre o produto:<br></strong>Antigamente este exemplar era reservado para os monges e convidados do mosteiro, hoje já pode se encontrar a venda em alguns poucos pontos exclusivos. </p>
+            <p><strong>Informações sobre o produto:<br></strong>Antigamente este exemplar era reservado para os monges e <br>convidados do mosteiro, hoje já pode se encontrar a venda em alguns poucos <br>pontos exclusivos. </p>
             <br>
-            <p><strong>Características:</strong><br>Com aromas e sabores de cacau e café, espuma cremosa, bastante persistente e a sua coloração é marrom escura ou preta.</p><br>
+            <p><strong>Características:</strong><br>Com aromas e sabores de cacau e café,<br>espuma cremosa, bastante persistente e a sua coloração é marrom escura ou preta.</p><br>
             <p><strong>Harmoniza com:</strong></p>
-            <img class ='icon' src="../images/Bread.png" alt="pao"><p>Massas</p>
-            <img class ='icon' src="../images/Meat.png" alt="carne"><p>Carnes</p>
-            <img class ='icon' src="../images/Cheese.png" alt="queijo"><p>Queijos</p>
+            <div class="icon">
+                <img src="../images/Bread.png" alt="pao"><p>Massas</p>
+                <img src="../images/Meat.png" alt="carne"><p>Carnes</p>
+                <img src="../images/Cheese.png" alt="queijo"><p>Queijos</p>
+             </div>
             </div>
             </div>
           </div>
