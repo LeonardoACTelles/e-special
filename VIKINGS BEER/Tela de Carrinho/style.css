@@ -327,3 +327,43 @@ h2{
     position: relative;
     left: 15px;
 }
+.col-re-1{
+    position: relative;
+    top: 100px;
+    right: 150px;
+}
+.col-re-2{
+    position: relative;
+    top: 100px;
+    right: 100px;
+}
+.col-re-3{
+    position: relative;
+    top: 100px;
+    right: 100px;
+}
+
+.add{
+    position: relative;
+    top: 100px;
+    right: 100px;
+}
+input[type="submit"]{
+    color: white;
+    cursor: pointer;
+    background-color: #1D1C1C;
+    font-family: 'Abel';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 25px;
+    position: relative;
+    top: 100px;
+    right: 100px;
+    margin: 20px;
+    padding: 20px;
+  }
+  input[type="submit"]:hover{
+    background-color: white;
+    color: black;
+  }
