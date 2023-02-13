@@ -1,91 +1,85 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Vikings Beerhouse</title>
+  <title>Carrinho</title>
   <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="stylesheet" href="./carrinho.css">
   <link rel="stylesheet" href="./fontawesome/css/all.min.css">
 </head>
 
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="#">V I K I N G S <br> BEERHOUSE </a></li>
-        <li><a href="#">SOBRE</a></li>
-        <li><a href="#">PRODUTOS</a></li>
-        <li><a href="#">OFERTAS</a></li>
-        <li><a href="#">Carrinho</a></li>
-        <li><a href="#"><img src="imagens\t.png" alt="VIKINGS BEERHOUSE" width="100px"></a></li>
-        <li><a href="#">
-            <form><input type="search" placeholder="Pesquisar"></form>
-          </a></li>
-        <div class="barra-vertical"></div>
-        <li><a href="#">
-            <div class="minha-conta"><img src="imagens\minhaConta.png" alt="Minha Conta" width="20">
-              <p>Minha <br> Conta</p>
-            </div>
-          </a>
-        </li>
-        <li><a href="#">
-            <div class="meus-pedidos"><img src="imagens\carrinho.png" alt="Meus Pedidos" width="20">
-              <p> <br> Carrinho </p>
-            </div>
-          </a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-
-
+    <header>
+        <nav>
+          <ul>
+            <li><a href="../Tela Home/index.html">V I K I N G S <br> BEERHOUSE </a></li>
+            <li><a href="../sobrenós/sobrenos.html">SOBRE</a></li>
+            <li><a href="../Tela de Vitrine/index.html">PRODUTOS</a></li>
+            <li><a href="../Tela de Perfil/">MINHA CONTA</a></li>
+            <li><a href="#"><img src="../sobrenós/imagens/t.png" alt="VIKINGS BEERHOUSE" width="100px"></a></li>
+            <li><a href="#">
+                <form><input type="search" placeholder="Pesquisar"></form>
+              </a></li>
+            <div class="barra-vertical"></div>
+            <li><a href="../Tela Login/index.html">
+                <div class="minha-conta"><img src="../sobrenós/imagens/minhaConta.png" alt="Minha Conta" width="20">
+                  <p>Faça <br>Seu <br>Login</p></div></a>
+                </div>
+              </a>
+            </li>
+            <li><a href="../Tela de Carrinho/index.html">
+                <div class="meus-pedidos"><img src="../sobrenós/imagens/carrinho.png" alt="Meus Pedidos" width="20">
+                  <p>Meus <br> Pedidos</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
   <main>
-      <div id="carrinho" whidth="320" heigth="320">
-        <li><a href="#">Continuar comprando ></a></li>
-        <li><a href="#">PRODUTO</a></li>
-        <li><a href="#">DESCRIÇÃO</a></li>
-        <li><a href="#">QTD.</a></li>
-        <li><a href="#">PREÇO</a></li>
+    <div class="container">
+        <h1 class="tittle"> Meu Carrinho</h1>
+        <h5 id="Continue">Continuar Comprando          
+            <a href="#"><img src="../images/seta.png" alt=""></a>
+        </h5>
+        <div class="descricao">
+            <li>PRODUTO</li>
+            <li>DESCRIÇÃO</li>
+            <li>QTD.</li>
+            <li>PREÇO</li>
+        </div>
+        <div class=" container-fluid" id="container-produto">
       
-        <li><a href="#"><div><img src="../images/Young-stout.PNG" alt="Young Stout"><p>VIKINGS- Young´s Stout qtd 1  R$ 20,00</p><br> lixo <br></div>div></a></li>
-
-        <li><a href="#"><div><img src="../images/Marwhal - Black Beer.PNG" alt="Marwhal - Black Beer"><p>Marwhal - Black Beer qtd 2 R$ 20,00</p> lixo <br></div></a></li>
-         
-      </div>
-
-      <div id="resumo" whidth="250" height="250">
-        <div id="qtde">
-          <li><a href="#">1</a></li>
-          <li><a href="#">2</a></li>
+          <div class="row" id="produto" *ngFor="let item of carrinho">
+            <div class="col-md-2"> 
+            <a href="../Tela de Detalhes/index.html"><div class="BEER"><img src="../images/Young-stout.PNG" alt="Young Stout"><p id="nome"></p> </div></a>
+             <div class="col-md-3">
+              <p id="nome">VIKINGS <br>Young´s Stout</p>
+            </div>
+            <div class="col-md-4">
+                <input type="button" id="minus" value="-" (click)="process(-1)" (click)="parcial()" />
+                <input [(ngModel)]="quant" id="quant" name="quant" class="text" size="1" value="1" type="text"
+                      maxlength="2" />
+                <input type="button" id="plus" value="+" (click)="process(1)" (click)="parcial()">
+            </div>
+            </div>
+            <div class="col-md-5">
+                <p id="preco">R$69,99</p>
+            </div>
+          </div>
         </div>
-
-        <div id="descricao">
-          <li><a href="#">Cerveja Tradic.</a></li>
-          <li><a href="#">Cerveja Escura </a></li>
-        </div>
-
-        <div id="valor">
-          <li><a href="#">R$20,00</a></li>
-          <li><a href="#">R$79,97</a></li>
-        </div>
-
-        <input type="submit" value="Adicionar mais produtos>">  
-
-      </div>
-      
-      <div id="frete"  whidht="100" height="100"> 
-        <a href="#"><div><p>Frete --- </p><br></div></a>
-        <a href="#"><div><p>Total< R$ 99,97</p><br></div></a>
-
-        <input type="submit" value="COMPRAR">
-
-      </div>
-
-      <div id="sugestoes" whidht="320" height="320">
-      <a href="#"><div class="BEER"><img src="../images/Negra Modelo - Honey beer.PNG" alt="Negra Modelo - Honey beer"><p>Negra Modelo - Honey beer<br> R$ 89,99</p></div></a>
-      <a href="#"><div class="BEER"><img src="../images/Impeesa - Porter.PNG" alt="Impeesa - Porter"><p>Impeesa - Porter<br> R$ 69,99</p></div></a>
-      <a href="#"><div class="BEER"><img src="../images/Cornet -.PNG" alt="Cornet- Pale Ale"><p>Cornet- Pale Ale<br> R$ 49,99</p></div></a>
+        <h6>Sugestões Vikings para você:</h6>
+        <div class="sugestao">
+        <a href="../Tela de Detalhes/index.html"><img src="../images/Impeesa - Porter.PNG" alt="Impeesa - Porter"><p>Impeesa - Porter<br> R$ 69,99</p></a>
+        <a href="../Tela de Detalhes/index.html"><img src="../images/Cornet -.PNG" alt="Cornet- Pale Ale"><p>Cornet- Pale Ale<br> R$ 49,99</p></a>
+        <a href="../Tela de Detalhes/index.html"><img src="../images/PALE -.PNG" alt="VOLCELEST - Golden Pale"><p>VOLCELEST - Golden Pale<br> R$ 59,99</p></a>
     </div>
+    <div class="comprar">
+        <h2> Resumo do pedido</h2>
+        
+        
+</div>
 
+</div>
     </main>   
   </body>
 <script src="./fontawesome/js/all.min.js"></script>
