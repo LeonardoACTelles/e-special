@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Ropa+Sans&display=swap');
+
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+
+/*-------------------------------------------------------*/
+/* CSS HEADER*/
+header{
+    max-width: 100%;
+    height: 49px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.25);
+}
+
+.logo {
+    width: 63px;
+    height: 25px;
+    margin: 8px 0px 16px 44px;
+}
+
+.texto-logo {
+    position: absolute;
+    left: 107px;
+    top: 13px;
+    bottom: 14px;
+    width: 38px;
+    height: 22px;
+    font-family: 'Ropa Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 11px;
+    color: #AAAAAA; 
+}
+
+.menu-hamburguer{
+    width: 18px;
+    height: 12px;
+    margin: 18px 31px 19px 0px;   
+}
+/*-------------------------------------------------------*/
+
+/* CSS ARTICLE PRINCIPAL*/
+
+#article-principal {
+    max-width: 697px;
+    margin: 20px auto 37px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.img-slide-1{
+    max-width: 100%;
+}
+
+/*-------------------------------------------------------*/
+
+/* CSS ARTICLE PRODUTOS*/
+
+.article-produtos{
+    max-width: 697px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 20px;
+}
+.produto{
+    width: 256px;
+    height: 242px;
+    background: #EEEEEE;
+    margin: 0px auto;
+}
+.produto img{
+    max-width: 100%;
+}
+
+.valor-botao{
+    display: flex;
+    justify-content: space-between;
+    margin: 9px 13px 0px 12px;
+    
+}
+
+.valor {
+    width: 86px;
+    height: 33px;
+    font-family: 'Ropa Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 27px;
+    color: #888888;
+}
+
+.botao {
+    width: 56px;
+    height: 21px;
+    background: #51D275;
+    border-radius: 10.5px;
+    font-family: 'Ropa Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.botao2{
+    width: 56px;
+    height: 21px;
+    background: #DC9730;
+    border-radius: 10.5px;
+    font-family: 'Ropa Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.descricao{
+    max-width: 100%;
+    height: 44px;
+    font-family: 'Ropa Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 11px;
+    text-align: justify;
+    color: #555555;
+    margin: 0px 13px 12px 12px;
+}
+
+@media (max-width: 355px){
+    .article-produtos{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .produto{
+        margin-bottom: 20px;
+    }
+    .botao {
+        font-size: 20px;
+    }
+    .botao2 {
+        font-size: 20px;
+    }
+}
+
+/*-------------------------------------------------------*/
+
+/* CSS ASIDE MENU OPCIONAL*/
+
+.menu-opcional{
+    
+    max-width: 697px;
+    margin: 45px auto 57px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.name{
+    margin-bottom: 13px;
+    width: 266px;
+    height: 33px;
+    font-family: 'Ropa Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 27px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    text-align: center;
+    color: #888888;
+}
+
+.menu{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    height: 80px;
+    max-width: 697px;
+    margin-bottom: 13px;
+}
+
+.botao1 {
+    max-width: 697px;
+    position: absolute;
+    font-family: 'Ropa Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 27px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #888888;
+    
+    
+}
+.img1 {
+    position: absolute;
+    opacity: 0.5;
+    max-width: 100%;   
+}
+
+@media (max-width: 355px){
+    .menu{
+        height: 40px;
+    }
+    .menu-opcional{
+    
+        max-width: 697px;
+        margin: 22.5px auto 28.5px;
+    }
+}
+
+/*-------------------------------------------------------*/
+
+/* CSS FOOTERL*/
+
+footer{
+
+    max-width: 697px;
+    height: 243px;
+    margin: 0px auto 40px;
+    background: #333333;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.mapa{
+    max-width: 252px;
+    margin: 50px auto 40px 48px;    
+}
+
+.mapa iframe{
+    border-radius: 10px;
+    max-width: 100%;
+    
+}
+
+.dados {
+    max-width: 175px;
+    margin: 49px 45px 99px 20px;
+}
+.dados div{
+    font-family: 'Ropa Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 25px;
+    text-align: justify;
+    color: #FFFFFF;
+    max-width: 100%;
+}
+
+.redes-sociais{
+    max-width: 98px;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 55px;
+}
+
+@media (max-width: 355px){
+
+    .mapa iframe{
+        width: 150px;
+        height: 180px;
+        
+    }
+.mapa {
+
+    margin: 44px auto 40px 25px;
+
+    }
+}
