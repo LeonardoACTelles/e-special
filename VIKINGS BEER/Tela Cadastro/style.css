@@ -228,9 +228,9 @@ letter-spacing: -0.3px;
 color: #FFFFFF;
 }
 
-input[type="submit"]{
+button[type="submit"]{
   width: 487px;
-  height: 20x;
+  height: 45px;
   left: 20px;
   margin-bottom: 25px;
   text-align: center;
@@ -248,7 +248,7 @@ input[type="submit"]{
   font-size: 25px;
   line-height: 25px;
 }
-input[type="submit"]:hover{
+button[type="submit"]:hover{
   background-color: white;
   color: black;
 }
