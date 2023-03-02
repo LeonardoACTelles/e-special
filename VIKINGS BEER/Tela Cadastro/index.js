@@ -1,75 +1,106 @@
-window.addEventListener('load', function() { 
-    {
-    const dataNascimentoInput = document.getElementById('dataNascimento');
-    dataNascimentoInput.addEventListener('input', () => {
-    const dataNascimento = new Date(dataNascimentoInput.value);
-    const hoje = new Date();
-    const idade = hoje.getFullYear() - dataNascimento.getFullYear();
+window.addEventListener('load', function() {
+const form = document.getElementById("form")
+const date = document.getElementById("dataNascimento")
+const username = document.getElementById("nome")
+const email = document.getElementById("email")
+const emailConfirmacao= document.getElementById("confirmEmail")
+const password = document.getElementById("password")
+const passwordConfirmacao = document.getElementById("password-confirmation")
 
-  if (idade < 18) {
-    dataNascimentoInput.setCustomValidity
-    this.alert('Você deve ter pelo menos 18 anos para se cadastrar');
-  } else {
-    dataNascimentoInput.setCustomValidity
-    /* this.alert('Parabéns, você é maior de 18 anos e pode se cadastrar'); */
-  }
-});
-    }
-    const emailInput = document.getElementById('email');
-    const confirmEmailInput = document.getElementById('confirmEmail');
-    emailInput.addEventListener('input', () => {
-      if (emailInput.value !== confirmEmailInput.value) {
-        confirmEmailInput.setCustomValidity
-        this.alert('Os endereços de e-mail não correspondem');
-      } else {
-        confirmEmailInput.setCustomValidity('');
-      }
-    });
-{
-    const passwordInput = document.getElementById('password');
-    const confirmPasswordInput = document.getElementById('confirmPassword');
-
-    emailInput.addEventListener('input', () => {
-      if (passwordInput.value !== confirmPasswordInput.value) {
-        confirmEmailInput.setCustomValidity
-        this.alert('As senhas não correspondem');
-      } else {
-        confirmEmailInput.setCustomValidity('');
-      }
-    });
-}
-{
-    const campoInput = document.getElementsByClassName('column');
-    campoInput.addEventListener('input', () => {
-      if (campoInput.value === '') {
-        campoInput.setCustomValidity
-        this.alert('Este campo é obrigatório');
-      } else {
-        campoInput.setCustomValidity('');
-      }
-    });
-     
-}
-{
-    const senhaInput = document.getElementById('password');
-    senhaInput.addEventListener('input', () => {
-    const senha = senhaInput.value;
-
-  if (senha.length < 8) {
-    senhaInput.setCustomValidity('A senha deve ter pelo menos 8 caracteres');
-  } else if (!/[A-Z]/.test(senha)) {
-    senhaInput.setCustomValidity('A senha deve conter pelo menos uma letra maiúscula');
-  } else if (!/[a-z]/.test(senha)) {
-    senhaInput.setCustomValidity('A senha deve conter pelo menos uma letra minúscula');
-  } else if (!/\d/.test(senha)) {
-    senhaInput.setCustomValidity('A senha deve conter pelo menos um número');
-  } else {
-    senhaInput.setCustomValidity('');
-  }
-});
-}
+form.addEventListener("submit",(event) => {
+  event.preventDefault()
+  checkInputs()
 })
 
+function checkInputs() {
+  const dataValue = date.value
+  const usernameValue = username.value
+  const emailValue = email.value
+  const emailConfirmaValue = emailConfirmacao.value
+  const passwordValue = password.value
+  const passwordConfirmationValue = passwordConfirmation.value
+
+  let formIsValid = true
+
+  if (dataValue <= "18"){
+    formIsValid = false
+    setErrorFor (date, "Você não pode se cadastrar")
+  } else{
+    setSuccessFor(date)
+  }
+
+  if (usernameValue === "") {
+    formIsValid = false
+    setErrorFor(username, "O nome de usuário é obrigatório.")
+  } else {
+    setSuccessFor(username)
+  }
+
+  if (emailValue === "") {
+    formIsValid = false
+    setErrorFor(email, "O email é obrigatório.")
+  } else if (!checkEmail(emailValue)) {
+    formIsValid = false
+    setErrorFor(email, "Por favor, insira um email válido.")
+  } else {
+    setSuccessFor(email)
+  }
+
+  if (emailConfirmaValue === "") {
+    formIsValid = false
+    setErrorFor(emailConfirmacao, "A confirmação de senha é obrigatória.")
+  } else if (emailConfirmaValue !== emailConfirmacao) {
+    formIsValid = false
+    setErrorFor(emailConfirmacao, "As senhas não conferem.")
+  } else {
+    setSuccessFor(emailConfirmacao)
+  }
 
 
+  if (passwordValue === "") {
+    formIsValid = false
+    setErrorFor(password, "A senha é obrigatória.")
+  } else if (passwordValue.length < 7) {
+    formIsValid = false
+    setErrorFor(password, "A senha precisa ter no mínimo 7 caracteres.")
+  } else {
+    setSuccessFor(password)
+  }
 
+  if (passwordConfirmationValue === "") {
+    formIsValid = false
+    setErrorFor(passwordConfirmation, "A confirmação de senha é obrigatória.")
+  } else if (passwordConfirmationValue !== passwordValue) {
+    formIsValid = false
+    setErrorFor(passwordConfirmation, "As senhas não conferem.")
+  } else {
+    setSuccessFor(passwordConfirmation)
+  }
+
+  if (formIsValid) {
+    console.log("O formulário está 100% válido!")
+  }
+}
+
+function setErrorFor(input, message) {
+  const formControl = input.parentElement
+  const small = formControl.querySelector("small")
+
+  // Adiciona a mensagem de erro
+  small.innerText = message
+
+  // Adiciona a classe de erro
+  formControl.className = "form-control error"
+}
+
+function setSuccessFor(input) {
+  const formControl = input.parentElement
+
+  // Adicionar a classe de sucesso
+  formControl.className = "form-control success"
+}
+
+function checkEmail(email = '') {
+  return email.includes('@')
+}
+})
