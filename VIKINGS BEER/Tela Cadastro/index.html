@@ -3,7 +3,7 @@
     <head>
         <meta name="viewport"content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
-        <!-- <script src="./index.js"></script> -->
+        <script src="./index.js"></script>
         <title>Cadastro</title>
     </head>
       <body>
@@ -47,15 +47,60 @@
         <main>
           <section>
             <h2>Seja um Viking</h2>
-              <form id="form" action="" method="get">
-              <div class="column">
-                <input type="date" name="datanascimento" id="dataNascimento" placeholder="Data de Nascimento" required>   
-                <input type="text" name="nome" id="nome" placeholder="Nome Completo" required>      
-                <input type="email" id="email" name="email" placeholder="E-mail" required>
-                <input type="email" id="confirmEmail" name="confirmEmail" placeholder="Confirme seu e-mail" required>
-                <input type="password" id="password" name="password" placeholder="Senha" required>
-                <input type="password" id="password-confirmation" name="password-confirmation" placeholder="Confirme sua senha" required>
-            </form>
+            <form id="form" class="form">
+              <div class="form-control">
+                <input
+                  id="dataNascimento"
+                  type="date"
+                  placeholder="Data de Nascimento"
+                />
+                <small>Mensagem de erro</small>
+              </div>
+              <div class="form-control">
+                <input
+                  id="username"
+                  type="text"
+                  placeholder="Nome Completo"
+                />
+                <small>Mensagem de erro</small>
+              </div>
+      
+              <div class="form-control">
+                <input
+                  id="email"
+                  type="text"
+                  placeholder="Digite seu email"
+                />
+                <small>Mensagem de erro</small>
+              </div>
+
+              <div class="form-control">
+                <input
+                  id="confirmEmail"
+                  type="text"
+                  placeholder="Confirme seu e-mail"
+                />
+                <small>Mensagem de erro</small>
+              </div>
+      
+              <div class="form-control">
+                <input
+                  id="password"
+                  type="password"
+                  placeholder="Digite sua senha"
+                />
+                <small>Mensagem de erro</small>
+              </div>
+      
+              <div class="form-control">
+                <input
+                  id="password-confirmation"
+                  type="password"
+                  placeholder="Confirme sua senha"
+                />
+                <small>Mensagem de erro</small>
+              </div>   
+            
             <h3>Cadastre-se com:</h3>
                 <div class="social-media">
                     <a href="#">
@@ -66,6 +111,7 @@
                     </a>
                 </div>
                 <button type="submit">Cadastrar</button>
+              </form>
           </section>       
         </main>
     </div>

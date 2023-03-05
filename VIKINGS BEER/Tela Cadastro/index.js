@@ -4,8 +4,9 @@ const date = document.getElementById("dataNascimento")
 const username = document.getElementById("nome")
 const email = document.getElementById("email")
 const emailConfirmacao= document.getElementById("confirmEmail")
+const passwordConfirmation= document.getElementById("password-confirmation")
 const password = document.getElementById("password")
-const passwordConfirmacao = document.getElementById("password-confirmation")
+
 
 form.addEventListener("submit",(event) => {
   event.preventDefault()
@@ -104,3 +105,5 @@ function checkEmail(email = '') {
   return email.includes('@')
 }
 })
+
+console.log()
