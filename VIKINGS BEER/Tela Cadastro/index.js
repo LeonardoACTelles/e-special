@@ -1,8 +1,11 @@
 const form = document.getElementById("form")
 const username = document.getElementById("username")
+const dateNasc = document.getElementById("dataNasc")
 const email = document.getElementById("email")
+const emailConfirmation = document.getElementById("emailConfirm")
 const password = document.getElementById("password")
 const passwordConfirmation = document.getElementById("password-confirmation")
+
 
 form.addEventListener("submit", (e) => {
   e.preventDefault()
@@ -11,18 +14,27 @@ form.addEventListener("submit", (e) => {
 
 function checkInputs() {
   const usernameValue = username.value
+  const dateNascValue = dateNasc.value
   const emailValue = email.value
   const passwordValue = password.value
   const passwordConfirmationValue = passwordConfirmation.value
+  const emailConfirmationValue = emailConfirmation.value
 
   let formIsValid = true
 
   if (usernameValue === "") {
     formIsValid = false
-    setErrorFor(username, "O nome de usuário é obrigatório.")
+    setErrorFor(username, "O nome completo é obrigatório.")
   } else {
     setSuccessFor(username)
-  }
+  } 
+/* 
+    if (idade < 18) {
+      formIsValid = false
+      setErrorFor(dateNasc, "Você tem menos de 18 anos");
+    } else {
+      dataNascimentoInput.setSuccessFor(dateNasc);
+    }  */
 
   if (emailValue === "") {
     formIsValid = false
@@ -33,6 +45,17 @@ function checkInputs() {
   } else {
     setSuccessFor(email)
   }
+
+  if (emailConfirmationValue === "") {
+    formIsValid = false
+    setErrorFor(emailConfirmation, "A confirmação de e-mail é obrigatória.")
+  } else if (emailConfirmationValue !== emailConfirmation) {
+    formIsValid = false
+    setErrorFor(emailConfirmation, "Os e-mails não conferem.")
+  } else {
+    setSuccessFor(emailConfirmation)
+  }
+
 
   if (passwordValue === "") {
     formIsValid = false
