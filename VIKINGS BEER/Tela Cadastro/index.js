@@ -1,34 +1,21 @@
-window.addEventListener('load', function() {
 const form = document.getElementById("form")
-const date = document.getElementById("dataNascimento")
-const username = document.getElementById("nome")
+const username = document.getElementById("username")
 const email = document.getElementById("email")
-const emailConfirmacao= document.getElementById("confirmEmail")
-const passwordConfirmation= document.getElementById("password-confirmation")
 const password = document.getElementById("password")
+const passwordConfirmation = document.getElementById("password-confirmation")
 
-
-form.addEventListener("submit",(event) => {
-  event.preventDefault()
+form.addEventListener("submit", (e) => {
+  e.preventDefault()
   checkInputs()
 })
 
 function checkInputs() {
-  const dataValue = date.value
   const usernameValue = username.value
   const emailValue = email.value
-  const emailConfirmaValue = emailConfirmacao.value
   const passwordValue = password.value
   const passwordConfirmationValue = passwordConfirmation.value
 
   let formIsValid = true
-
-  if (dataValue <= "18"){
-    formIsValid = false
-    setErrorFor (date, "Você não pode se cadastrar")
-  } else{
-    setSuccessFor(date)
-  }
 
   if (usernameValue === "") {
     formIsValid = false
@@ -46,17 +33,6 @@ function checkInputs() {
   } else {
     setSuccessFor(email)
   }
-
-  if (emailConfirmaValue === "") {
-    formIsValid = false
-    setErrorFor(emailConfirmacao, "A confirmação de senha é obrigatória.")
-  } else if (emailConfirmaValue !== emailConfirmacao) {
-    formIsValid = false
-    setErrorFor(emailConfirmacao, "As senhas não conferem.")
-  } else {
-    setSuccessFor(emailConfirmacao)
-  }
-
 
   if (passwordValue === "") {
     formIsValid = false
@@ -104,6 +80,3 @@ function setSuccessFor(input) {
 function checkEmail(email = '') {
   return email.includes('@')
 }
-})
-
-console.log()

@@ -1,118 +1,117 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-    <head>
-        <meta name="viewport"content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
-        <script src="./index.js"></script>
-        <title>Cadastro</title>
-    </head>
-      <body>
-        <header>
-          <nav>
-            <ul>
-              <li><a href="../Tela Home/index.html">V I K I N G S <br> BEERHOUSE </a></li>
-              <li><a href="../sobrenós/sobrenos.html">SOBRE</a></li>
-              <li><a href="../Tela de Vitrine/index.html">PRODUTOS</a></li>
-              <li><a href="../Tela de Perfil/">MINHA CONTA</a></li>
-              <li><a href="#"><img src="../Tela Home/imagens/t.png" alt="VIKINGS BEERHOUSE" width="100px"></a></li>
-              <li><a href="../Tela de Vitrine/index.html">
-                  <form><input type="search" placeholder="Pesquisar"></form>
-                </a></li>
-              <div class="barra-vertical"></div>
-              <li><a href="../Tela Login/index.html">
-                  <div class="minha-conta"><img src="../Tela Home/imagens/minhaConta.png" alt="Minha Conta" width="20">
-                    <p>Faça <br>Seu <br>Login</p></div></a>
-                  </div>
-                </a>
-              </li>
-              <li><a href="../Tela de Carrinho/index.html">
-                  <div class="meus-pedidos"><img src="../Tela Home/imagens/carrinho.png" alt="Meus Pedidos" width="20">
-                    <p>Meus <br> Pedidos</p>
-                  </div>
-                </a>
-              </li>
-            </ul>
-          </nav>
-        </header>
-    
-        <div class="card">
-        <aside class="column">
-            <img  class="image"src="../images/Logo sem fundo 600x600 sem opacidade.png" alt="logotipo">
-            <h1>Faça parte da nossa <br> <strong>BEERHOUSE</strong></h1>
-            <br>
-            <p>Receba uma  newsletter com dicas de <br> fabricação e receitas para harmonização em <br>diversas ocasiões. <br>
-            Surpreenda o paladar de seus amigos <br> e família.<br>
-            Todo mês um catálogo exclusivo de <br> cervejas dos maiores fabricantes <br> artesanais do Brasil.</p>
-          </aside>
-        <main>
-          <section>
-            <h2>Seja um Viking</h2>
-            <form id="form" class="form">
-              <div class="form-control">
-                <input
-                  id="dataNascimento"
-                  type="date"
-                  placeholder="Data de Nascimento"
-                />
-                <small>Mensagem de erro</small>
-              </div>
-              <div class="form-control">
-                <input
-                  id="username"
-                  type="text"
-                  placeholder="Nome Completo"
-                />
-                <small>Mensagem de erro</small>
-              </div>
-      
-              <div class="form-control">
-                <input
-                  id="email"
-                  type="text"
-                  placeholder="Digite seu email"
-                />
-                <small>Mensagem de erro</small>
-              </div>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Cadastro</title>
+  </head>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="../Tela Home/index.html">V I K I N G S <br> BEERHOUSE </a></li>
+        <li><a href="../sobrenós/sobrenos.html">SOBRE</a></li>
+        <li><a href="../Tela de Vitrine/index.html">PRODUTOS</a></li>
+        <li><a href="../Tela de Perfil/">MINHA CONTA</a></li>
+        <li><a href="#"><img src="../Tela Home/imagens/t.png" alt="VIKINGS BEERHOUSE" width="100px"></a></li>
+        <li><a href="../Tela de Vitrine/index.html">
+            <input type="search" placeholder="Pesquisar">
+          </a></li>
+        <div class="barra-vertical"></div>
+        <li><a href="../Tela Login/index.html">
+            <div class="minha-conta"><img src="../Tela Home/imagens/minhaConta.png" alt="Minha Conta" width="20">
+              <p>Faça <br>Seu <br>Login</p></div></a>
+            </div>
+          </a>
+        </li>
+        <li><a href="../Tela de Carrinho/index.html">
+            <div class="meus-pedidos"><img src="../Tela Home/imagens/carrinho.png" alt="Meus Pedidos" width="20">
+              <p>Meus <br> Pedidos</p>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <body>
+    <div class="card">
+      <aside class="column">
+          <img  class="image"src="../images/Logo sem fundo 600x600 sem opacidade.png" alt="logotipo">
+          <h1>Faça parte da nossa <br> <strong>BEERHOUSE</strong></h1>
+          <br>
+          <p>Receba uma  newsletter com dicas de <br> fabricação e receitas para harmonização em <br>diversas ocasiões. <br>
+          Surpreenda o paladar de seus amigos <br> e família.<br>
+          Todo mês um catálogo exclusivo de <br> cervejas dos maiores fabricantes <br> artesanais do Brasil.</p>
+        </aside>
+    <div class="container">
+      <div class="header">
+        <h2>Seja um VIKINGS</h2>
+      </div>
+      <form id="form" class="form">
+        <div class="form-control">
+           <input
+            id="username"
+            type="text"
+            placeholder="Nome Completo"
+          />
+          <small>Mensagem de erro</small>
+        </div>
+        <div class="form-control">
+          <input
+           id="dataNasc"
+           type="date"
+           placeholder="Data de Nascimento"
+         />
+         <small>Mensagem de erro</small>
+       </div>
 
-              <div class="form-control">
-                <input
-                  id="confirmEmail"
-                  type="text"
-                  placeholder="Confirme seu e-mail"
-                />
-                <small>Mensagem de erro</small>
-              </div>
-      
-              <div class="form-control">
-                <input
-                  id="password"
-                  type="password"
-                  placeholder="Digite sua senha"
-                />
-                <small>Mensagem de erro</small>
-              </div>
-      
-              <div class="form-control">
-                <input
-                  id="password-confirmation"
-                  type="password"
-                  placeholder="Confirme sua senha"
-                />
-                <small>Mensagem de erro</small>
-              </div>   
-            
-            <h3>Cadastre-se com:</h3>
+        <div class="form-control">
+           <input
+            id="email"
+            type="text"
+            placeholder="Digite seu email"
+          />
+          <small>Mensagem de erro</small>
+        </div>
+        <div class="form-control">
+          <input
+           id="emailConfirm"
+           type="text"
+           placeholder="Confirme seu email."
+         />
+         <small>Mensagem de erro</small>
+       </div>
+
+        <div class="form-control">
+          <input
+            id="password"
+            type="password"
+            placeholder="Digite sua senha."
+          />
+          <small>Mensagem de erro</small>
+        </div>
+
+        <div class="form-control">
+           <input
+            id="password-confirmation"
+            type="password"
+            placeholder="Digite sua senha novamente."
+          />
+          <small>Mensagem de erro</small>
+        </div>
+        <h3>Cadastre-se com:</h3>
                 <div class="social-media">
                     <a href="#">
-                      <img src="../Tela Cadastro/Social Media/google.png" alt="Google">
+                      <img src="../images/Social Media/google.png" alt="Google">
                     </a>
                     <a href="#">
-                      <img src="../Tela Cadastro/Social Media/facebook.png" alt="Facebook">
+                      <img src="../images/Social Media/facebook.png" alt="Facebook">
                     </a>
                 </div>
-                <button type="submit">Cadastrar</button>
-              </form>
-          </section>       
-        </main>
+        <button type="submit">Enviar</button>
+      </form>
     </div>
+    <script src="index.js"></script>
+  </body>
 </html>
