@@ -274,36 +274,3 @@ button[type="submit"]:hover{
   visibility: visible;
   color: #e74c3c;
 }
-
-h3{
-  font-family: 'Public Sans';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 25px;
-  line-height: 29px;
-  display: flex;
-  align-items: center;
-  letter-spacing: -0.3px;
-  color: #FFFFFF;
-  }
-
-.social-media {
-  display: flex;
-  align-content: center;
-  margin-left: 12rem;
-  margin-top: 1rem;
-  margin-bottom: 2rem;
-}
-
-.social-media a {
-  text-decoration: none;
-}
-
-.social-media img {
-  width: 40px;
-  margin-left: 2rem;
-}
-
-.social-media a:first-child img {
-  margin-left: 0;
-}

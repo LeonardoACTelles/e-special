@@ -1,20 +1,45 @@
 const form = document.getElementById("form")
 const username = document.getElementById("username")
-const dateNasc = document.getElementById("dataNasc")
+const dataNascimentoInput = document.getElementById('dataNasc');
+const estadoConfirmation = document.getElementById("estado")
+/* const dateNasc = document.getElementById("dataNasc") */
 const email = document.getElementById("email")
 const emailConfirmation = document.getElementById("emailConfirm")
 const password = document.getElementById("password")
 const passwordConfirmation = document.getElementById("password-confirmation")
 
+fetch('https://servicodados.ibge.gov.br/api/v1/localidades/distritos?orderBy=nome')
+.then(response => response.json())
+
+.then(data => console.log(data))
 
 form.addEventListener("submit", (e) => {
   e.preventDefault()
+  validacaoNascimento()
   checkInputs()
 })
 
+function validacaoNascimento() {
+  const dataNascimento = new Date(dataNascimentoInput.value);
+  const hoje = new Date();
+  const idade = hoje.getFullYear() - dataNascimento.getFullYear();
+  /* let formIsValid = true */
+
+  if (idade < 18) {
+    /* formIsValid = false */
+    setErrorFor(dataNasc, "Você deve ter pelo menos 18 anos para se cadastrar")
+    /* dataNascimentoInput.setCustomValidity('Você deve ter pelo menos 18 anos para se cadastrar');  */
+  } else {
+    setSuccessFor(dataNasc)
+    /* dataNascimentoInput.setCustomValidity(''); */
+  }
+
+}  
+
 function checkInputs() {
   const usernameValue = username.value
-  const dateNascValue = dateNasc.value
+ /*  const dateNascValue = dateNasc.value */
+  const stageValue = estadoConfirmation.value
   const emailValue = email.value
   const passwordValue = password.value
   const passwordConfirmationValue = passwordConfirmation.value
@@ -28,13 +53,20 @@ function checkInputs() {
   } else {
     setSuccessFor(username)
   } 
-/* 
-    if (idade < 18) {
-      formIsValid = false
-      setErrorFor(dateNasc, "Você tem menos de 18 anos");
-    } else {
-      dataNascimentoInput.setSuccessFor(dateNasc);
-    }  */
+
+  if (stageValue === "") {
+    formIsValid = false
+    setErrorFor(estadoConfirmation, "Ei! Não entregamos para essa região")
+  } else {
+    setSuccessFor(estadoConfirmation)
+  } 
+
+/*   if (dateNascValue < "18") {
+    formIsValid = false
+    setErrorFor(dateNasc, "Você deve ser maior de 18 anos")
+  } else {
+    setSuccessFor(dateNasc)
+  }  */
 
   if (emailValue === "") {
     formIsValid = false
