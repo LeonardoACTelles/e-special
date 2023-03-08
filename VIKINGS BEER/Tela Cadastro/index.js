@@ -8,10 +8,10 @@ const emailConfirmation = document.getElementById("emailConfirm")
 const password = document.getElementById("password")
 const passwordConfirmation = document.getElementById("password-confirmation")
 
-fetch('https://servicodados.ibge.gov.br/api/v1/localidades/distritos?orderBy=nome')
+/* fetch('https://servicodados.ibge.gov.br/api/v1/localidades/distritos?orderBy=nome')
 .then(response => response.json())
 
-.then(data => console.log(data))
+.then(data => console.log(data)) */
 
 form.addEventListener("submit", (e) => {
   e.preventDefault()
@@ -29,7 +29,10 @@ function validacaoNascimento() {
     /* formIsValid = false */
     setErrorFor(dataNasc, "Você deve ter pelo menos 18 anos para se cadastrar")
     /* dataNascimentoInput.setCustomValidity('Você deve ter pelo menos 18 anos para se cadastrar');  */
-  } else {
+  } else if (idade != "") {
+    /* formIsValid = false */
+    setErrorFor(dataNasc, "Por favor, insira uma data válido.")
+  }  else {
     setSuccessFor(dataNasc)
     /* dataNascimentoInput.setCustomValidity(''); */
   }
@@ -54,9 +57,9 @@ function checkInputs() {
     setSuccessFor(username)
   } 
 
-  if (stageValue === "") {
+  if (stageValue != "São Paulo") {
     formIsValid = false
-    setErrorFor(estadoConfirmation, "Ei! Não entregamos para essa região")
+    setErrorFor(estadoConfirmation, "Ei! Não entregamos para este estado")
   } else {
     setSuccessFor(estadoConfirmation)
   } 
