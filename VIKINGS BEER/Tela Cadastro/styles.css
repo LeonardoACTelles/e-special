@@ -223,6 +223,15 @@ h2{
   padding: 10px;
 }
 
+.form-control select {
+  border: 2px solid #f0f0f0;
+  display: block;
+  border-radius: 10px;
+  font-size: 14px;
+  width: 100%;
+  padding: 10px;
+}
+
 .form-control small {
   position: absolute;
   bottom: 0;
