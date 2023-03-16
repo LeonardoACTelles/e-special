@@ -29,10 +29,10 @@ function validacaoNascimento() {
     /* formIsValid = false */
     setErrorFor(dataNasc, "Você deve ter pelo menos 18 anos para se cadastrar")
     /* dataNascimentoInput.setCustomValidity('Você deve ter pelo menos 18 anos para se cadastrar');  */
-  } else if (idade != "") {
-    /* formIsValid = false */
-    setErrorFor(dataNasc, "Por favor, insira uma data válido.")
-  }  else {
+ } /* else if (idade === "") {
+    formIsValid = false 
+    setErrorFor(dataNasc, "Por favor, insira uma data válido.") 
+  }  */ else {
     setSuccessFor(dataNasc)
     /* dataNascimentoInput.setCustomValidity(''); */
   }
@@ -60,7 +60,10 @@ function checkInputs() {
   if (stageValue != "São Paulo") {
     formIsValid = false
     setErrorFor(estadoConfirmation, "Ei! Não entregamos para este estado")
-  } else {
+  } /* else if (stageValue !== "") {
+    formIsValid = false
+    setErrorFor(estadoConfirmation, "O campo Estado é obrigatório")
+  } */ else {
     setSuccessFor(estadoConfirmation)
   } 
 

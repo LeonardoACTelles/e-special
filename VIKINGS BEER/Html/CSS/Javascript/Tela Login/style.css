@@ -176,7 +176,7 @@ a:hover{
   opacity: 0.5;
 }
 #login-container{
-  background-color: black;
+  background-color: transparent;
   height: 600px;
   width: 800px;
   margin-left: auto;
@@ -190,7 +190,7 @@ a:hover{
 
 }
 h1{
-  color: #FFFFFF;
+  color: black;
   font-family: 'Abel';
   font-style: normal;
   font-weight: 400;
@@ -198,7 +198,7 @@ h1{
   position: absolute;
   top: 30px;
   left: 325px;
-}
+  }
 
 h2{
   color: yellow;
@@ -241,7 +241,9 @@ input{
 #forgot-pass{
   text-align: right;
   display: block;
+  color: black;
 }
+
 button[type="submit"]{
   width: 487px;
   height: 50px;
@@ -276,5 +278,9 @@ button[type="submit"]:hover{
   position: absolute;
   top: 500px;
   left: 315px;
-  color: #FFFFFF;
+  color: black;
+}
+
+.register-container a:hover{
+  color: #F9E000;
 }
