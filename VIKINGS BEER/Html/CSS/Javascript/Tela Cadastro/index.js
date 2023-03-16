@@ -87,7 +87,7 @@ function checkInputs() {
   if (emailConfirmationValue === "") {
     formIsValid = false
     setErrorFor(emailConfirmation, "A confirmação de e-mail é obrigatória.")
-  } else if (emailConfirmationValue !== emailConfirmation) {
+  } else if (emailConfirmationValue !== emailValue) {
     formIsValid = false
     setErrorFor(emailConfirmation, "Os e-mails não conferem.")
   } else {
